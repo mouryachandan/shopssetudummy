@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .tech-gradient { background: linear-gradient(135deg, #a78bfa 0%, #7c3aed 100%); }
+    </style>
+    <linearGradient id="techGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#a78bfa;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="512" height="512" fill="url(#techGrad)" />
+  
+  <!-- Outer ring -->
+  <circle cx="256" cy="256" r="230" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="15"/>
+  
+  <!-- Segments -->
+  <g fill="white">
+    <!-- Top right segment - bright -->
+    <path d="M 256 100 L 340 156 L 298 220 Z" opacity="0.95" />
+    <!-- Right segment -->
+    <path d="M 340 156 L 385 220 L 340 284 L 298 220 Z" opacity="0.8" />
+    <!-- Bottom right segment -->
+    <path d="M 298 220 L 340 284 L 256 340 Z" opacity="0.6" />
+    <!-- Bottom left segment -->
+    <path d="M 256 340 L 172 284 L 214 220 Z" opacity="0.6" />
+    <!-- Left segment -->
+    <path d="M 172 284 L 127 220 L 172 156 L 214 220 Z" opacity="0.8" />
+    <!-- Top left segment - bright -->
+    <path d="M 214 220 L 172 156 L 256 100 Z" opacity="0.95" />
+  </g>
+  
+  <!-- Center accent -->
+  <circle cx="256" cy="256" r="35" fill="white" opacity="0.7" />
+  <circle cx="256" cy="256" r="20" fill="url(#techGrad)" />
+</svg>
